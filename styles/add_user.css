@@ -1,0 +1,102 @@
+/* Global Layout Fixes */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f7f9;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-header {
+    background-color: #1a202c;
+    color: white;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+.app-container {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: white;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px 0;
+}
+
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li a {
+    display: block;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.sidebar li.active a {
+    background-color: #f7fafc;
+    color: #5850ec;
+}
+
+/* Content Area */
+.content-area {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.form-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 { margin-bottom: 25px; font-size: 24px; color: #1a202c; }
+
+/* The Form Card */
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+}
+
+/* Save Button */
+.form-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.save-btn {
+    background-color: #5850ec;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
