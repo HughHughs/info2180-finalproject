@@ -1,0 +1,86 @@
+/* styling for container */
+.new-contact-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #1a202c;
+}
+
+/* Grid Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+/* grouping label and input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+/* Inputs & Selects */
+input, select {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    color: #1a202c;
+    width: 100%;
+}
+
+/* restricts the 'Title' select width */
+.full-width select {
+    max-width: 100px;
+}
+
+.full-width:last-of-type select {
+    max-width: 100%;
+}
+
+/* Footer & Button */
+.form-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.save-btn {
+    background-color: #5850ec;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.save-btn:hover {
+    background-color: #4338ca;
+}
+
+/* message box */
+#form-message {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
