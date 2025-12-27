@@ -1,0 +1,115 @@
+/* general styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #1a202c;
+    color: white;
+    padding: 15px 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Main Login Area */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a202c;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #374151;
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+/* purple button */
+button {
+    background-color: #5850ec;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+.lock-icon {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #6b7280;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-msg {
+    color: #dc2626;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
